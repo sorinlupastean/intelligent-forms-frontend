@@ -1,0 +1,139 @@
+.container {
+  display: flex;
+}
+
+body {
+  background-color: #e5ecf2;
+}
+
+.container {
+  display: flex;
+}
+
+.cover {
+  background-color: white;
+  width: 400px;
+  height: 452px;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+}
+
+.create_account {
+  color: #023e7d;
+  font-size: 20px;
+}
+
+.type_of_account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff5f9;
+  width: 260px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 21px;
+}
+
+.type_of_account button {
+  border: none;
+  background-color: #eff5f9;
+  width: 86.66px;
+  height: 30px;
+  color: #023e7d;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.type_of_account button:hover {
+  background-color: #c9e0ef;
+}
+
+.signup_inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 31px;
+  color: #023e7d;
+}
+
+input {
+  border: none;
+  background-color: #eff5f9;
+  width: 210px;
+  height: 30px;
+  position: relative;
+  caret-color: #023e7d;
+}
+
+input:focus {
+  outline: none;
+  color: #023e7d;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  color: #023e7d;
+}
+
+.container_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff5f9;
+  height: 30px;
+  width: 260px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.inputs_logo {
+  margin-bottom: 3px;
+  margin-right: 9px;
+}
+
+.signup_btn {
+  background-color: #023e7d;
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border: 0;
+  cursor: pointer;
+}
+
+.signin_text {
+  color: #8aa3be;
+  font-size: 10px;
+  margin-bottom: -30px;
+}
+
+.signin_link {
+  color: #023e7d;
+  text-decoration: none;
+}
+.side {
+  background-color: #023e7d;
+  width: 400px;
+  height: 452px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
