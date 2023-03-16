@@ -4,8 +4,10 @@ import { ReactComponent as Back } from "../../assets/back.svg";
 import { useNavigate } from "react-router-dom";
 import { ReactComponent as Plus } from "../../assets/plus.svg";
 import Todo from "../../components/DynamicField/DynamicField";
+import RichTextEditor from "../../components/RichTextEditor/RichTextEditor";
 
 function CreateForm() {
+  const [titleInput, setTitleInput] = useState("");
   const [labelInput, setLabelInput] = useState("");
   const [placeholderInput, setPlaceholderInput] = useState("");
   const [fieldTypeInput, setFieldTypeInput] = useState("");
@@ -30,6 +32,10 @@ function CreateForm() {
     setFieldTypeInput("");
   };
 
+  const handleCreateForm = (e) => {
+    navigate("/my-forms");
+  };
+
   return (
     <div className={CreateFormCSS.container}>
       <div className={CreateFormCSS.back_cover}>
@@ -38,16 +44,23 @@ function CreateForm() {
         </div>
       </div>
       <div className={CreateFormCSS.components}>
-        <div className={CreateFormCSS.left_side}>
-          <div className={CreateFormCSS.section_cover}>
+        <div className={CreateFormCSS.right_side}>
+          <div className={CreateFormCSS.form_title}>
             <div>Title</div>
             <input
-              value={labelInput}
-              onChange={(e) => setLabelInput(e.target.value)}
+              value={titleInput}
+              onChange={(e) => setTitleInput(e.target.value)}
               type={"text"}
             ></input>
           </div>
-
+          <div className={CreateFormCSS.cerere_container}>
+            <div className={CreateFormCSS.text}>Content</div>
+            <div className={CreateFormCSS.cerere}>
+              <RichTextEditor />
+            </div>
+          </div>
+        </div>
+        <div className={CreateFormCSS.left_side}>
           <div className={CreateFormCSS.section}>
             <div className={CreateFormCSS.section_cover}>
               <div>Label</div>
@@ -91,13 +104,6 @@ function CreateForm() {
             ))}
           </div>
         </div>
-
-        <div className={CreateFormCSS.right_side}>
-          <div className={CreateFormCSS.cerere_container}>
-            <div className={CreateFormCSS.text}>Content</div>
-            <div className={CreateFormCSS.cerere}></div>
-          </div>
-        </div>
       </div>
 
       <div className={CreateFormCSS.footer_bar}>
@@ -112,7 +118,7 @@ function CreateForm() {
           </div>
         </div>
         <div className={CreateFormCSS.right_cover}>
-          <button>CREATE</button>
+          <button onClick={handleCreateForm}>CREATE</button>
         </div>
       </div>
     </div>

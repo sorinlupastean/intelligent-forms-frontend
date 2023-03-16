@@ -106,6 +106,9 @@
 }
 
 .right_side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 100%;
   max-width: 600px;
 }
@@ -182,4 +185,23 @@
 .left_side {
   width: 100%;
   max-width: 350px;
+}
+
+.form_title {
+  color: #001845;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 8px;
+  gap: 20px;
+}
+
+.form_title input {
+  border: none;
+  height: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 0;
 }

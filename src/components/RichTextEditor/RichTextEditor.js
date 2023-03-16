@@ -1,9 +1,29 @@
-import ReactRichEditor from "react-rich-text-editor";
-
-import RichTextEditorCSS from "./RichTextEditor.module.css";
+import React from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 function RichTextEditor() {
-  return <ReactRichEditor height={200} />;
+  return (
+    <ReactQuill
+      theme="snow"
+      formats={[
+        "header",
+        "font",
+        "size",
+        "bold",
+        "italic",
+        "underline",
+        "strike",
+        "blockquote",
+        "list",
+        "bullet",
+        "indent",
+        "link",
+        "image",
+        "color",
+      ]}
+    />
+  );
 }
 
 export default RichTextEditor;

@@ -28,7 +28,7 @@ code {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 40px 40px 40px 40px;
 }
@@ -40,7 +40,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
+.ql-container,
+.ql-toolbar {
+  border: none !important;
+}
+
+.ql-toolbar {
+  border-bottom: 2px solid #f0f4f8 !important;
 }
