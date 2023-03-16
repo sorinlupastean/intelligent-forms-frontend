@@ -6,9 +6,13 @@
   font-family: "League Spartan", sans-serif;
   font-weight: 500;
 }
-body {
-  background-color: #e5ecf2;
-  /*cursor: url(../../assets/cursor.svg), auto;*/
+.page {
+  background-color: #f0f4f8;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -46,12 +50,12 @@ body {
   margin-bottom: 31px;
 }
 
-input {
+.login_inputs input {
   border: none;
-  background-color: #eff5f9;
+  background-color: #f0f4f8;
   width: 210px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 8px;
   position: relative;
 }
 
@@ -59,10 +63,10 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eff5f9;
+  background-color: #f0f4f8;
   height: 30px;
   width: 260px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-top: 8px;
 }
 
@@ -80,7 +84,8 @@ input:focus {
   background-color: #023e7d;
   width: 140px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 8px;
+  padding-top: 4px;
   color: white;
   display: flex;
   align-items: center;
@@ -88,6 +93,10 @@ input:focus {
   margin-bottom: 8px;
   border: 0;
   cursor: pointer;
+}
+
+.sign_in_link {
+  text-decoration: none;
 }
 
 .login_text {

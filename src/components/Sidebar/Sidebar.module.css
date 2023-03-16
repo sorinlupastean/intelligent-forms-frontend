@@ -1,0 +1,102 @@
+.sidebar_cover {
+  min-height: 100vh;
+  background-color: white;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  color: #001845;
+  margin-bottom: 10px;
+}
+
+.type_of_account {
+  color: #8aa3be;
+  margin-bottom: 35px;
+}
+
+.main_buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_buttons button {
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 152px;
+  height: 32px;
+  color: #023e7d;
+  margin-bottom: 18px;
+}
+
+.link_page {
+  text-decoration: none;
+}
+
+.main_buttons button:hover {
+  background-color: #f0f4f8;
+}
+
+.icon {
+  margin-left: 10px;
+  margin-right: 21px;
+}
+
+.footer_buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_buttons button {
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 152px;
+  height: 32px;
+  color: #023e7d;
+  margin-bottom: 18px;
+}
+
+.footer_buttons button:hover {
+  background-color: #f0f4f8;
+}
+
+.logout_link {
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}

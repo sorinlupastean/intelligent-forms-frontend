@@ -1,0 +1,185 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.back_cover {
+  display: flex;
+  align-items: center;
+  width: 12%;
+  justify-content: space-between;
+}
+
+.back_icon {
+  display: flex;
+  cursor: pointer;
+}
+
+.back_text {
+  display: flex;
+  color: #001845;
+}
+
+.components {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  color: #001845;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 0px 0 20px 0;
+  align-items: center;
+}
+
+.dynamic_field_input {
+  border: none;
+  height: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.title input[type="text"] {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section_cover {
+  color: #001845;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.section_cover input {
+  border: none;
+  height: 30px;
+  border-radius: 8px;
+  width: 60%;
+}
+
+.section_cover input[type="text"] {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.add_new_field {
+  display: flex;
+  justify-content: end;
+}
+
+.section button {
+  margin-top: 10px;
+  background-color: #023e7d;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 0 15px 0 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.field_cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 29px;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.right_side {
+  width: 100%;
+  max-width: 600px;
+}
+
+.cerere_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text {
+  color: #001845;
+  font-size: 20px;
+  padding: 10px 0 5px 0;
+  padding-top: 0;
+}
+
+.cerere {
+  background-color: white;
+  height: 490px;
+  border-radius: 8px;
+}
+
+.footer_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.left_cover {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.retention_period_text {
+  color: #001845;
+  display: flex;
+  align-items: center;
+}
+
+.retention_period_cover {
+  background-color: white;
+  color: #001845;
+  display: flex;
+  height: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 15px;
+}
+
+.right_cover button {
+  background-color: #023e7d;
+  color: white;
+  height: 30px;
+  width: 120px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.time_value {
+  border: none;
+  height: 100%;
+  width: 60px;
+}
+
+.time_unit {
+  display: flex;
+  align-items: center;
+}
+
+.left_side {
+  width: 100%;
+  max-width: 350px;
+}

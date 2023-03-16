@@ -2,8 +2,13 @@
   display: flex;
 }
 
-body {
-  background-color: #e5ecf2;
+.page {
+  background-color: #f0f4f8;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -38,21 +43,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eff5f9;
+  background-color: #f0f4f8;
   width: 260px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-top: 21px;
 }
 
 .type_of_account button {
   border: none;
-  background-color: #eff5f9;
+  background-color: #f0f4f8;
   width: 86.66px;
   height: 30px;
   color: #023e7d;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .type_of_account button:hover {
@@ -66,9 +71,9 @@ body {
   color: #023e7d;
 }
 
-input {
+.signup_inputs input {
   border: none;
-  background-color: #eff5f9;
+  background-color: #f0f4f8;
   width: 210px;
   height: 30px;
   position: relative;
@@ -91,10 +96,10 @@ input[type="password"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eff5f9;
+  background-color: #f0f4f8;
   height: 30px;
   width: 260px;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-top: 8px;
 }
 
@@ -107,7 +112,7 @@ input[type="password"] {
   background-color: #023e7d;
   width: 140px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 8px;
   color: white;
   display: flex;
   align-items: center;
@@ -115,6 +120,10 @@ input[type="password"] {
   margin-bottom: 8px;
   border: 0;
   cursor: pointer;
+}
+
+.signup_btn_link {
+  text-decoration: none;
 }
 
 .signin_text {

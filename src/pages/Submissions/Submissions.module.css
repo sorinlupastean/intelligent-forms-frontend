@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.top_bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.btns {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.filter {
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 30px;
+  justify-content: space-evenly;
+  color: #001845;
+}
+
+.sort {
+  background-color: white;
+  color: #001845;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95px;
+  height: 30px;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 214px;
+  height: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 14px;
+}
+
+.search input {
+  width: 150px;
+  height: 30px;
+  border: none;
+}
+
+.search input::placeholder {
+  color: #90959d;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  border-collapse: collapse;
+}
+
+.header {
+  font-weight: bold;
+  color: #001845;
+}
+
+.header th {
+  text-align: left;
+  padding: 15px;
+}
+
+.submission {
+  display: table-row;
+  background-color: white;
+  overflow: hidden;
+}
+
+.submission td {
+  padding: 15px;
+  color: #023e7d;
+}
+
+table td:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+table td:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.submission {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.submission:hover {
+  transform: scale(1.01);
+}
