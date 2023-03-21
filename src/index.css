@@ -21,6 +21,7 @@ code {
 .pagina {
   background-color: #f0f4f8;
   display: flex;
+  min-height: 100vh;
 }
 
 .continut {

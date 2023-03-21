@@ -44,7 +44,7 @@ function CreateForm() {
         </div>
       </div>
       <div className={CreateFormCSS.components}>
-        <div className={CreateFormCSS.right_side}>
+        <div className={CreateFormCSS.left_side}>
           <div className={CreateFormCSS.form_title}>
             <div>Title</div>
             <input
@@ -60,7 +60,7 @@ function CreateForm() {
             </div>
           </div>
         </div>
-        <div className={CreateFormCSS.left_side}>
+        <div className={CreateFormCSS.right_side}>
           <div className={CreateFormCSS.section}>
             <div className={CreateFormCSS.section_cover}>
               <div>Label</div>

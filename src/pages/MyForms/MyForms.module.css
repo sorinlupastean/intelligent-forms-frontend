@@ -14,8 +14,8 @@
 .right_side {
   display: flex;
   align-items: center;
-  width: 10%;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .list_icon {
