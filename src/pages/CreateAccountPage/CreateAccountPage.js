@@ -128,7 +128,6 @@ function CreateAccountPage() {
                 type={"email"}
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
-                required
               />
             </div>
             <div className={CreateAccountPageCSS.container_input}>
