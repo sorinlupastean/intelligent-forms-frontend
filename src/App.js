@@ -27,8 +27,8 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route exact path="/my-forms" element={<MyForms />} />
             <Route path="/submissions" element={<Submissions />} />
-            <Route path="/my-forms/:id" element={<CreateForm />} />
-            <Route path="/submissions/:id" element={<FillForm />} />
+            <Route path="/my-forms/create-form" element={<CreateForm />} />
+            <Route path="/submissions/fill-form" element={<FillForm />} />
             <Route exact path="/" element={<SignInPage />} />
             <Route path="/sign-in-page" element={<SignInPage />} />
             <Route path="/sign-up-page" element={<CreateAccountPage />} />

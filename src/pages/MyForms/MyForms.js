@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import MyFormsCSS from "./MyForms.module.css";
 import { ReactComponent as List } from "../../assets/list.svg";
 import { ReactComponent as Search } from "../../assets/search.svg";
@@ -8,6 +8,24 @@ import { useNavigate } from "react-router-dom";
 
 export default function MyForms() {
   const navigate = useNavigate();
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const [forms, setForms] = useState([
+    {
+      name: "Cerere de inmatriculare",
+      createdAt: "04.03.2023",
+      submissions: 5,
+    },
+  ]);
+
+  const handleDeleteForm = (index) => {
+    setForms(forms.filter((_, i) => i !== index));
+  };
+
+  const handleSerachInputChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
     <div className={MyFormsCSS.container}>
       <div className={MyFormsCSS.top_bar}>
@@ -19,13 +37,18 @@ export default function MyForms() {
         </div>
         <div className={MyFormsCSS.left_side}>
           <div className={MyFormsCSS.search_input}>
-            <input type={"text"} placeholder="Search"></input>
+            <input
+              type={"text"}
+              placeholder="Search"
+              value={searchTerm}
+              onChange={handleSerachInputChange}
+            ></input>
             <div className={MyFormsCSS.search_icon}>
               <Search />
             </div>
           </div>
           <div className={MyFormsCSS.add_new_btn}>
-            <button onClick={() => navigate("/my-forms/id")}>
+            <button onClick={() => navigate("/my-forms/create-form")}>
               <Plus />
               ADD NEW
             </button>
@@ -42,14 +65,20 @@ export default function MyForms() {
           </tr>
         </thead>
         <tbody>
-          <tr className={MyFormsCSS.submission}>
-            <td>Cerere de înmatriculare</td>
-            <td>04.03.2023</td>
-            <td>1</td>
-            <td>
-              <Delete />
-            </td>
-          </tr>
+          {forms
+            .filter((form) =>
+              form.name.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+            .map((form, index) => (
+              <tr key={index} className={MyFormsCSS.submission}>
+                <td>{form.name}</td>
+                <td>{form.createdAt}</td>
+                <td>{form.submissions}</td>
+                <td>
+                  <Delete onClick={() => handleDeleteForm(index)} />
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </div>

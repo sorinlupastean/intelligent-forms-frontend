@@ -10,15 +10,44 @@ function FillForm() {
       <div className={FillFormCSS.container}>
         <div className={FillFormCSS.back_btn}>
           <Back onClick={() => navigate("/submissions")} cursor="pointer" />
-          <div>Submissions</div>
         </div>
         <div className={FillFormCSS.containers}>
           <div className={FillFormCSS.fill_form}>
             <div className={FillFormCSS.input_cover}>
               Nume
-              <div className={FillFormCSS.input}>
-                <input type={"text"}></input>
-              </div>
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              Prenume
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              CNP
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              Localitate
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              Strada
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              Numar
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              Bloc
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              Scara
+              <input type={"text"}></input>
+            </div>
+            <div className={FillFormCSS.input_cover}>
+              Etaj
+              <input type={"text"}></input>
             </div>
           </div>
           <div className={FillFormCSS.cerere}></div>

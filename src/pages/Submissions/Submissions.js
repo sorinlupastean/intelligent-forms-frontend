@@ -42,7 +42,7 @@ function Submissions() {
           <tbody>
             <tr
               className={SubmissionCSS.submission}
-              onClick={() => navigate("/submissions/id")}
+              onClick={() => navigate("/submissions/fill-form")}
             >
               <td>04.03.2023</td>
               <td>Lupaștean</td>

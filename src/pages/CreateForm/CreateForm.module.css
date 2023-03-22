@@ -73,6 +73,17 @@
   width: 60%;
 }
 
+.section_cover select {
+  height: 30px;
+  border-radius: 8px;
+  width: 60%;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #023e7d;
+  outline: none;
+  border: none;
+}
+
 .section_cover input[type="text"] {
   font-size: 16px;
   padding-left: 10px;
@@ -128,7 +139,7 @@
 
 .cerere {
   background-color: white;
-  height: 490px;
+  height: 450px;
   border-radius: 8px;
 }
 
